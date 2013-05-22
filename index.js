@@ -14,11 +14,11 @@ var has = {}.hasOwnProperty;
 module.exports = function(main) {
   var args = arguments;
   var l = args.length;
-  var i = 1;
+  var i = 0;
   var src;
   var key;
 
-  while (i++ < l) {
+  while (++i < l) {
     src = args[i];
     for (key in src) {
       if (has.call(src, key)) {
