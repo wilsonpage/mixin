@@ -1,4 +1,6 @@
 
+'use strict';
+
 /**
  * Locals
  */
@@ -20,10 +22,10 @@ module.exports = function(main) {
     src = args[i];
     for (key in src) {
       if (has.call(src, key)) {
-        main[prop] = src[prop];
+        main[key] = src[key];
       }
     }
   }
 
   return main;
-},
+};
