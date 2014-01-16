@@ -1,0 +1,6 @@
+{
+  "name": "mixin",
+  "description": "Mixes one or more object's properties into another",
+  "main": "index.js",
+  "license": "MIT"
+}
